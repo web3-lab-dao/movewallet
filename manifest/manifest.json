@@ -1,0 +1,53 @@
+{
+  "name": "Move Wallet",
+  "version": "0.1.0",
+  "description": "Web3 wallet for Move.",
+  "homepage_url": "https://web3lab.io",
+  "author": "https://web3lab.network",
+  "manifest_version": 2,
+  "content_security_policy": "object-src 'self'; script-src 'self';",
+  "web_accessible_resources": [
+    "*.js",
+    "*.json"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "file://*/*",
+        "http://localhost/*",
+        "https://*/*"
+      ],
+      "js": [
+        "provider-bridge.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Alt+T",
+        "mac": "Alt+T",
+        "chromeos": "Alt+T",
+        "linux": "Alt+T"
+      }
+    }
+  },
+  "browser_action": {
+    "default_title": "Move Wallet",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "alarms",
+    "storage",
+    "unlimitedStorage",
+    "activeTab"
+  ],
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.js"
+    ]
+  }
+}

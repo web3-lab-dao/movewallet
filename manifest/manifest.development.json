@@ -1,0 +1,7 @@
+{
+  "background": {
+    "scripts": [
+      "dev/extension-reload.js"
+    ]
+  }
+}
