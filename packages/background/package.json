@@ -1,0 +1,38 @@
+{
+  "name": "@web3lab/wallet-background",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "watch": "webpack --mode=development --watch"
+  },
+  "dependencies": {
+    "@redux-devtools/remote": "^0.7.5",
+    "ajv": "^8.11.0",
+    "ajv-formats": "^2.1.1",
+    "assert": "^2.0.0",
+    "dayjs": "^1.11.5",
+    "dexie": "^3.2.2",
+    "emittery": "^1.0.0",
+    "ethers": "^5.7.1",
+    "node-fetch": "^3.2.10",
+    "sinon": "^14.0.0",
+    "util": "^0.12.4",
+    "lodash": "^4.17.21",
+    "redux": "^4.2.0",
+    "webext-redux": "^2.1.9",
+    "webextension-polyfill": "^0.10.0"
+  },
+  "devDependencies": {
+    "@redux-devtools/cli": "^1.0.7",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@types/sinon": "^10.0.13",
+    "@types/webextension-polyfill": "^0.9.1",
+    "crypto-browserify": "^3.12.0",
+    "fake-indexeddb": "^4.0.0",
+    "jest-webextension-mock": "^3.7.22",
+    "mockzilla": "^0.14.0",
+    "ts-node": "^10.9.1"
+  }
+}

@@ -9,10 +9,14 @@
     "start": "run-p devtools \"dev {@}\" --",
     "devtools": "redux-devtools --hostname=localhost --port=8000"
   },
+  "workspaces": [
+    "packages/background",
+    "packages/ui",
+    "packages/window-provider"
+  ],
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "webext-redux": "^2.1.9"
+    "@web3lab/wallet-background": "*",
+    "@web3lab/wallet-ui": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
@@ -40,5 +44,8 @@
     "webpack-cli": "4.10.0",
     "webpack-livereload-plugin": "^3.0.2",
     "webpack-merge": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=16.0"
   }
 }
