@@ -1,29 +1,15 @@
-import Chrome from 'chrome'
+// @ts-ignore
+declare module 'webext-redux/lib/strategies/deepDiff/diff' {
+  // This should be : DiffStrategy, but importing webext-redux to reuse
+  // DiffStrategy results in an error augmenting the diff module.
+  export default function (): (oldObj: unknown, newObj: unknown) => unknown
+}
 
-declare namespace chrome {
-  export default Chrome
+// @ts-ignore
+declare module 'webext-redux/lib/strategies/deepDiff/patch' {
+  // This should be : DiffStrategy, but importing webext-redux to reuse
+  // DiffStrategy results in an error augmenting the patch module.
+  export default function (): (oldObj: unknown, newObj: unknown) => unknown
 }
 
 declare module 'styled-jsx/style'
-
-declare module '*.svg' {
-  import React = require('react')
-  export const ReactComponent: React.SFC<React.SVGProps<SVGSVGElement>>
-  const src: string
-  export default src
-}
-
-declare module '*.jpg' {
-  const content: string
-  export default content
-}
-
-declare module '*.png' {
-  const content: string
-  export default content
-}
-
-declare module '*.json' {
-  const content: string
-  export default content
-}

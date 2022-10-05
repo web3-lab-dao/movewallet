@@ -20,4 +20,4 @@ module.exports = {
     'packages/ui/*',
     'packages/background/*',
   ],
-};
+}
