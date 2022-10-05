@@ -1,0 +1,68 @@
+/**
+ * @license
+ *
+ * Font Family: Chillax
+ * Designed by: Manushi Parikh
+ * URL: https://www.fontshare.com/fonts/chillax
+ * © 2022 Indian Type Foundry
+ *
+ * Font Style:
+ * Chillax Variable(Variable font)
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+
+@font-face {
+  font-family: 'Chillax-Variable';
+  src: url('../fonts/Chillax-Variable.woff2') format('woff2'),
+  url('../fonts/Chillax-Variable.woff') format('woff'),
+  url('../fonts/Chillax-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2022 Indian Type Foundry
+ *
+ * Font Style:
+ * Satoshi Variable(Variable font)
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 900.0;
+*
+* available axes:
+
+* 'wght' (range from 300.0 to 900.0)
+
+*/
+
+@font-face {
+  font-family: 'Satoshi-Variable';
+  src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
+  url('../fonts/Satoshi-Variable.woff') format('woff'),
+  url('../fonts/Satoshi-Variable.ttf') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}

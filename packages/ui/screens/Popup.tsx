@@ -11,11 +11,16 @@ export function Main(): ReactElement {
   return (
     <>
       <div className="top_menu_wrap_decoy">
-        Popups
+
       </div>
 
-      <div className="flex">
+      <div className="">
+        <h1 className="font-heading text-3xl font-bold underline">
+          Hello world!
+        </h1>
 
+        <h1 className="font-heading text-3xl">dsadsads</h1>
+        <p>asdsasaadsa</p>
       </div>
     </>
   )

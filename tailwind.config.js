@@ -1,3 +1,6 @@
+const colors = require('tailwindcss/colors')
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,7 +8,12 @@ module.exports = {
     'packages/ui/screens/**/*.{tx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Satoshi-Variable', ...defaultTheme.fontFamily.sans],
+        heading: ['Chillax-Variable', ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
   plugins: [],
 }
