@@ -40,6 +40,10 @@ const baseConfig: Configuration = {
             }
           }
         ]
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       }
     ]
   },
@@ -77,11 +81,7 @@ const baseConfig: Configuration = {
     }),
     new SizePlugin({}),
     new CopyPlugin({
-      patterns: [
-        {
-          from: 'packages/ui/public/'
-        }
-      ]
+      patterns: [{ from: 'packages/ui/public/' }]
     }),
     new DefinePlugin({
       'process.env.VERSION': JSON.stringify(process.env.npm_package_version)

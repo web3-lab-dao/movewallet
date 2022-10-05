@@ -24,8 +24,8 @@
     "react-router-dom": "^6.4.1",
     "react-transition-group": "^4.4.5",
     "redux": "^4.2.0",
-    "webextension-polyfill": "^0.10.0",
     "webext-redux": "^2.1.9",
+    "webextension-polyfill": "^0.10.0",
     "zxcvbn": "^4.4.2"
   },
   "devDependencies": {

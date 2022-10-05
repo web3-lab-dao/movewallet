@@ -8,19 +8,14 @@ import { Store } from 'webext-redux'
 import { Provider } from 'react-redux'
 
 export function Main(): ReactElement {
-  const dispatch = useBackgroundDispatch()
-  const count = 0;
-
-  const incr = () => dispatch(increment())
-
   return (
     <>
       <div className="top_menu_wrap_decoy">
         Popups
+      </div>
 
-        <p>Count: {count}</p>
+      <div className="flex">
 
-        <button onClick={incr}>Incr</button>
       </div>
     </>
   )

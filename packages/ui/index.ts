@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import { Store } from 'webext-redux'
 import { browser, newProxyStore } from '@web3lab/wallet-background'
 import { SUPPORT_TABBED_ONBOARDING } from '@web3lab/wallet-background/features'
+
+import './style.css'
 import Popup from './screens/Popup'
 
 async function attachUIToRootElement(
