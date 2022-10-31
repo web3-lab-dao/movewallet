@@ -10,6 +10,9 @@ With Move Wallet, users can manage their assets with a single private key (or mn
 - Show NFT token and visualize NFT token 
 - Stake, bridge and other functions 
 
+## Documentation
+Please check the detailed documents for developers [here](https://github.com/web3-lab-dao/movewallet/blob/main/docs/docs.md)
+
 ## Contribution 
 This project is under development and really needs your help. Let’s start contributing by creating the PRs and discussion.
 
